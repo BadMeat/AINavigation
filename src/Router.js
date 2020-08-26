@@ -6,6 +6,7 @@ import HomeScreen from './screen/HomeScreen';
 import ViewScreen from './screen/ViewScreen';
 import { View, Image } from 'react-native';
 import UIBasicScreen from './screen/UIBasicScreen';
+import FormScreen from './screen/uibasic/FormScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -25,6 +26,7 @@ const IconTab = (props, image) => {
 const StackNavigation = () => (
     <Stack.Navigator>
         <Stack.Screen name="UIBasicScreen" component={UIBasicScreen} />
+        <Stack.Screen name="Form" component={FormScreen} />
     </Stack.Navigator>
 )
 
